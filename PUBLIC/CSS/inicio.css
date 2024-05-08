@@ -1,0 +1,33 @@
+:root {
+  --blue-background: blue;
+  --yellow-header: yellow;
+  --colortext: white;
+}
+
+/*MAIN*/
+/*banner*/
+.banner,
+.banner img {
+  height: 80vh;
+  width: 100vw;
+}
+
+/*contenido*/
+.container {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.enlaces,
+.noticias {
+  margin-top: 10px;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/*FIN DE MAIN*/

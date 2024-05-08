@@ -1,0 +1,106 @@
+:root {
+  --blue-background: blue;
+  --yellow-header: yellow;
+}
+/*General*/
+* {
+  background-color: var(--blue-background);
+  margin: 0px;
+  height: auto;
+}
+
+/*header*/
+header {
+  background-color: var(--yellow-header);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 15vh;
+  width: 100%;
+}
+.linea{
+    border: 2px solid orange; /* Red separator line */
+}
+header img {
+  background-color: var(--yellow-header);
+  width: 100px;
+  height: 100px;
+}
+
+header ul {
+  background-color: var(--yellow-header);
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+header ul li,
+header nav {
+  background-color: var(--yellow-header);
+}
+
+header ul li a {
+  background-color: var(--yellow-header);
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 25px;
+}
+/*FIN DE HEADER*/
+
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--yellow-header);
+}
+
+.escudo{
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.escudo img{
+    width: 100px;
+    height: 100px;
+    background-color: var(--yellow-header);
+}
+
+.escudo iframe{
+    background-color: var(--yellow-header);
+    margin: 10px;
+}
+
+.copy{
+    text-align: end;
+    border-top: 2px solid orange;
+    height: auto;
+}
+
+.copy p{
+    margin-right: 20px;
+}
+
+footer div,
+footer h1,
+footer h3,
+footer h6 {
+  background-color: var(--yellow-header);
+}
+
+footer a, footer i{
+    font-size: larger;
+    background-color: inherit;  
+}
+
+footer p{
+  background-color: inherit;
+}
