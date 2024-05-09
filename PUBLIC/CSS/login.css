@@ -1,0 +1,66 @@
+:root {
+  --fondoCuadro:#F59129;
+  --text-color: black;
+  --colorBtn: darkgray;
+  --error-color: red;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form,
+label,
+div,
+h2 {
+  background-color: var(--fondoCuadro);
+}
+input{
+    background-color: beige;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--fondoCuadro);
+    border: 3px solid black;
+    width: 35%;
+    height: 28.3vw;
+    flex-direction: column;
+  }
+  
+  .form {
+    text-align: center;
+    font-size: 25;
+  }
+  
+  .form h2 {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .form button[type="submit"] {
+    background-color: var(--colorBtn);
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 10px 20px;
+    color: var(--text-color);
+  }
+  
+    .error-message {
+      color: var(--error-color);
+      margin-top: 10px;
+    }
+  
+    .contrast-color {
+      color: #333;
+    }
+  
+    .highlight-color {
+      color: #F59129;
+    }
