@@ -1,44 +1,24 @@
 <?php
-// Database configuration
-$servername = "localhost";
-$username = "root";
-$password = ""; // **Store password securely!** (e.g., using environment variables)
-$dbname = "cabfuentes95";
+include 'conexion.php'; // Incluir el archivo de conexión a la base de datos
 
-// Connect to the database
-$conn = new mysqli($servername, $username, $password, $dbname);
+// Verificar si se enviaron datos del formulario
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $id = $_POST['id'];
+    $pin = $_POST['pin'];
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    // Consulta SQL para verificar las credenciales del usuario
+    $query = "SELECT * FROM usuarios WHERE ID = '$id' AND pin = '$pin'";
+    $result = mysqli_query($conexion, $query);
+
+    if (mysqli_num_rows($result) == 1) {
+        // Iniciar sesión y redirigir al usuario a la página de inicio
+        session_start();
+        $_SESSION['loggedin'] = true;
+        $_SESSION['id'] = $id;
+        header("location: inicio.php");
+    } else {
+        echo '<script>alert("ID o PIN incorrecto");</script>';
+        echo '<script>setTimeout(function() { window.location.href = "../../login.html"; }, 100);</script>';
+
+    }
 }
-
-// Get the user's ID and PIN from the login form
-$id = $_POST['id'];
-$pin = $_POST['pin'];
-
-// Prepare a SQL statement to select the user from the `usuario` table
-$stmt = $conn->prepare("SELECT * FROM usuario WHERE ID = ? AND pin = ?;");
-
-// Bind the user's ID and PIN to the statement
-$stmt->bind_param("is", $id, $pin);
-
-// Execute the statement
-$stmt->execute();
-
-// Get the result
-$result = $stmt->get_result();
-
-// Check if the user exists
-if ($result->num_rows > 0) {
-    // User exists, redirect to the dashboard
-    header("Location: logueado.html");
-} else {
-    // User does not exist, show an error message
-    echo "Invalid ID or PIN.";
-}
-
-// Close the statement and the connection
-$stmt->close();
-$conn->close();
-?>

@@ -1,9 +1,11 @@
+<?php include "PUBLIC/PHP/verificarSesion.php"; ?>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="PUBLIC/CSS/general.css" />
-    <link rel="stylesheet" type="text/css" href="PUBLIC/CSS/inicio.css" />
+    <link rel="stylesheet" type="text/css" href="PUBLIC/CSS/logueado.css" />
 
     <link rel="icon" href="PUBLIC/IMAGES/EscudoCABFuentes95.ico" />
     <title>CAB FUENTES 1995</title>
@@ -14,19 +16,28 @@
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="PUBLIC/IMAGES/EscudoCABFuentes95.png" alt="CAB FUENTES 1995"></a>
+        <img src="PUBLIC/IMAGES/EscudoCABFuentes95.png" alt="CAB FUENTES 1995"/>
       <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="historia.html">Historia</a></li>
-          <li><a href="login.html">Iniciar Sesión</a></li>
-        </ul>
+        <button class="cerrarSesion" onclick="location.href='PUBLIC/PHP/cerrarSesion.php'">Cerrar Sesión</button>
       </nav>
     </header>
     <hr class="linea" />
-
     <main>
-<h1>Estas logueado</h1>
+      <div class="saludo"></div>
+      <div class="container">
+        <div class="tienda">
+          <h1>Accede a Nuestra Tienda</h1>
+          <img src="PUBLIC/IMAGES/Tienda.png" alt="Tienda CAB Fuentes">
+        </div>
+        <div class="app">
+          <h1>Descarga FAB</h1>
+         <a href="https://play.google.com/store/apps/details?id=com.indalweb.aficionFAB&hl=es_US&pli=1" target="_blank"><img src="PUBLIC/IMAGES/appfab.jpeg" alt="APP FAB"></a>
+        </div>
+        <div class="desplazamientos">
+          <h1>Viaja con Nosotros</h1>
+          <img src="PUBLIC/IMAGES/desplazamiento.png" alt="desplazamientos temporada 24-25">
+        </div>
+      </div>
     </main>
 
     <footer>

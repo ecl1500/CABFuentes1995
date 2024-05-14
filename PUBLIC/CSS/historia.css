@@ -1,27 +1,27 @@
-:root{
-    --colorText:#FFF800;   
+:root {
+  --colorText: #fff800;
 }
 * {
-    margin: 0px;
+  margin: 0px;
 }
 
-main .text{
-    text-align: center;
-    width: 49%;
-    float: right;
-    margin-right: 40px;
-    color: var(--colorText);
-    font-size: larger;
+main .text {
+  text-align: center;
+  width: 49%;
+  float: right;
+  margin-right: 40px;
+  color: var(--colorText);
+  font-size: larger;
 }
-.text p{
-    margin-bottom: 20px;
+.text p {
+  margin-bottom: 20px;
 }
 
-.img{
-    width: 45%;
-    float: left;
+.img {
+  width: 45%;
+  float: left;
 }
-.img img{
-    width: 100%;
-    height: auto;
+.img img {
+  width: 100%;
+  height: auto;
 }

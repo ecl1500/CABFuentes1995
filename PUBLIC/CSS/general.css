@@ -18,8 +18,8 @@ header {
   height: 15vh;
   width: 100%;
 }
-.linea{
-    border: 2px solid orange; /* Red separator line */
+.linea {
+  border: 2px solid orange; /* Red separator line */
 }
 header img {
   background-color: var(--yellow-header);
@@ -49,7 +49,6 @@ header ul li a {
 }
 /*FIN DE HEADER*/
 
-
 /* FOOTER */
 footer {
   display: flex;
@@ -60,33 +59,33 @@ footer {
   background-color: var(--yellow-header);
 }
 
-.escudo{
-    height: auto;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.escudo {
+  height: auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.escudo img{
-    width: 100px;
-    height: 100px;
-    background-color: var(--yellow-header);
+.escudo img {
+  width: 100px;
+  height: 100px;
+  background-color: var(--yellow-header);
 }
 
-.escudo iframe{
-    background-color: var(--yellow-header);
-    margin: 10px;
+.escudo iframe {
+  background-color: var(--yellow-header);
+  margin: 10px;
 }
 
-.copy{
-    text-align: end;
-    border-top: 2px solid orange;
-    height: auto;
+.copy {
+  text-align: end;
+  border-top: 2px solid orange;
+  height: auto;
 }
 
-.copy p{
-    margin-right: 20px;
+.copy p {
+  margin-right: 20px;
 }
 
 footer div,
@@ -96,11 +95,13 @@ footer h6 {
   background-color: var(--yellow-header);
 }
 
-footer a, footer i{
-    font-size: larger;
-    background-color: inherit;  
+footer a,
+footer i {
+  font-size: larger;
+  background-color: transparent;
 }
 
-footer p{
+footer p {
   background-color: inherit;
+  font-weight: 700;
 }

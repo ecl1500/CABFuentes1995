@@ -9,12 +9,13 @@
 .banner,
 .banner img {
   height: 80vh;
-  width: 100vw;
+  width: 99vw;
 }
 
 /*contenido*/
 .container {
   width: 100vw;
+  height: 80vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,12 +23,14 @@
 }
 
 .enlaces,
-.noticias {
+.noticia {
   margin-top: 10px;
-  width: 45%;
+  height: 100%;
+  width: 45vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border: 3px solid black;
 }
 /*FIN DE MAIN*/
