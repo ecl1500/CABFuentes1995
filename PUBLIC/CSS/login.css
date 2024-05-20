@@ -1,5 +1,6 @@
+/*LOGIN.CSS*/
 :root {
-  --fondoCuadro: #f59129;
+  --fondoCuadro: #F2C230;
   --text-color: black;
   --colorBtn: darkgray;
   --error-color: red;
@@ -17,9 +18,11 @@ div,
 h2 {
   background-color: var(--fondoCuadro);
 }
+
 input {
   background-color: beige;
 }
+
 .container {
   display: flex;
   align-items: center;
@@ -33,7 +36,7 @@ input {
 
 .form {
   text-align: center;
-  font-size: 25;
+  font-size: 25px;
 }
 
 .form h2 {
@@ -62,5 +65,5 @@ input {
 }
 
 .highlight-color {
-  color: #f59129;
+  color: #F2C230;
 }

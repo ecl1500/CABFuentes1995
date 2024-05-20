@@ -1,7 +1,10 @@
+/*GENERAL.CSS*/
 :root {
-  --blue-background: blue;
-  --yellow-header: yellow;
+  --blue-background: #1F67A6;
+  --yellow-header: #F2D129;
+  --orange-line: #F28627;
 }
+
 /*General*/
 * {
   background-color: var(--blue-background);
@@ -18,9 +21,11 @@ header {
   height: 15vh;
   width: 100%;
 }
+
 .linea {
-  border: 2px solid orange; /* Red separator line */
+  border: 2px solid var(--orange-line); /* Red separator line */
 }
+
 header img {
   background-color: var(--yellow-header);
   width: 100px;
@@ -47,7 +52,6 @@ header ul li a {
   font-weight: bold;
   margin-right: 25px;
 }
-/*FIN DE HEADER*/
 
 /* FOOTER */
 footer {
@@ -80,7 +84,7 @@ footer {
 
 .copy {
   text-align: end;
-  border-top: 2px solid orange;
+  border-top: 2px solid var(--orange-line);
   height: auto;
 }
 

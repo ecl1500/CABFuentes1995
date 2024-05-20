@@ -1,8 +1,24 @@
+/*HISTORIA.CSS*/
 :root {
-  --colorText: #fff800;
+  --colorText: black;
+  --yellow-header: #F2D129;
+  --blue-background: #1F67A6;
+  --background-color: #F2F2F2;
 }
+
 * {
   margin: 0px;
+}
+
+main .text, main .img{
+  margin-top: 10px;
+  background-color: var(--background-color);
+
+}
+
+main{
+  color: var(--colorText);
+ 
 }
 
 main .text {
@@ -10,9 +26,9 @@ main .text {
   width: 49%;
   float: right;
   margin-right: 40px;
-  color: var(--colorText);
   font-size: larger;
 }
+
 .text p {
   margin-bottom: 20px;
 }
@@ -21,6 +37,7 @@ main .text {
   width: 45%;
   float: left;
 }
+
 .img img {
   width: 100%;
   height: auto;

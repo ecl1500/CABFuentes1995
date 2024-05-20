@@ -1,18 +1,16 @@
+/*INICIO.CSS*/
 :root {
-  --blue-background: blue;
-  --yellow-header: yellow;
-  --colortext: white;
+  --blue-background: #1F67A6;
+  --yellow-header: #F2D129;
+  --colortext: #F2F2F2;
 }
 
-/*MAIN*/
-/*banner*/
 .banner,
 .banner img {
   height: 80vh;
   width: 99vw;
 }
 
-/*contenido*/
 .container {
   width: 100vw;
   height: 80vh;
@@ -32,4 +30,3 @@
   align-items: center;
   flex-direction: column;
 }
-/*FIN DE MAIN*/

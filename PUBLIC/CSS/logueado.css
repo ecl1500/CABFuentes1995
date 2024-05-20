@@ -1,7 +1,8 @@
+/*LOGUEADO.CSS*/
 :root {
-  --blue-background: blue;
-  --yellow-header: yellow;
-  --colortext: white;
+  --blue-background: #1F67A6;
+  --yellow-header: #F2D129;
+  --colortext: #F2F2F2;
 }
 
 button {
@@ -40,6 +41,6 @@ button {
 .tienda h1,
 .app h1,
 .desplazamientos h1 {
-  color: #333; /* Cambia este color según tus preferencias */
-  margin-bottom: 10px; /* Añade un espacio entre el título y la imagen */
+  color: #333;
+  margin-bottom: 10px;
 }
