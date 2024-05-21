@@ -9,6 +9,6 @@ $database = "cabfuentes95";
 $conexion = mysqli_connect($host, $user, $password, $database);
 
 // Verificar la conexión
-if (!$conexion) {
+if (empty($conexion)) {
     die("Error al conectar con la base de datos: " . mysqli_connect_error());
 }

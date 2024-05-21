@@ -3,7 +3,7 @@ var noticiasDiv = document.getElementById('noticia');
 
 // Realizar una solicitud AJAX al servidor para obtener las noticias
 var xhr = new XMLHttpRequest();
-xhr.open('GET', './PHP/getNoticias.php', true);
+xhr.open('GET', '../PHP/getNoticias.php', true);
 xhr.onload = function () {
     if (xhr.status >= 200 && xhr.status < 400) {
         // Convertir la respuesta JSON en un objeto JavaScript

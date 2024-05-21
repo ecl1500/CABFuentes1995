@@ -10,12 +10,6 @@
   margin: 0px;
 }
 
-main .text, main .img{
-  margin-top: 10px;
-  background-color: var(--background-color);
-
-}
-
 main{
   color: var(--colorText);
  

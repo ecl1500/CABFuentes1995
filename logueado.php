@@ -15,6 +15,7 @@
     />
   </head>
   <body>
+    <script src="PUBLIC/JS/logueado.js"></script>
     <header>
         <img src="PUBLIC/IMAGES/EscudoCABFuentes95.png" alt="CAB FUENTES 1995"/>
       <nav>
@@ -27,15 +28,15 @@
       <div class="container">
         <div class="tienda">
           <h1>Accede a Nuestra Tienda</h1>
-          <img src="PUBLIC/IMAGES/Tienda.png" alt="Tienda CAB Fuentes">
+          <img src="PUBLIC/IMAGES/Tienda.png" alt="Tienda CAB Fuentes" class="tienda">
         </div>
         <div class="app">
           <h1>Descarga FAB</h1>
-         <a href="https://play.google.com/store/apps/details?id=com.indalweb.aficionFAB&hl=es_US&pli=1" target="_blank"><img src="PUBLIC/IMAGES/appfab.jpeg" alt="APP FAB"></a>
+         <a href="https://play.google.com/store/apps/details?id=com.indalweb.aficionFAB&hl=es_US&pli=1" target="_blank"><img class="app" src="PUBLIC/IMAGES/appfab.jpeg" alt="APP FAB"></a>
         </div>
         <div class="desplazamientos">
           <h1>Viaja con Nosotros</h1>
-          <img src="PUBLIC/IMAGES/desplazamiento.png" alt="desplazamientos temporada 24-25">
+          <img src="PUBLIC/IMAGES/desplazamiento.png" alt="desplazamientos temporada 24-25" class="desplazamientos">
         </div>
       </div>
     </main>

@@ -99,6 +99,16 @@ footer h6 {
   background-color: var(--yellow-header);
 }
 
+.redesSociales a {
+  margin-right: 10px;
+  color: inherit; 
+}
+
+.redesSociales i {
+  font-size: 24px; 
+  color: black; 
+}
+
 footer a,
 footer i {
   font-size: larger;

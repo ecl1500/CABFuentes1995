@@ -3,6 +3,7 @@
   --blue-background: #1F67A6;
   --yellow-header: #F2D129;
   --colortext: #F2F2F2;
+  --colorText: black;
 }
 
 button {
@@ -24,11 +25,13 @@ button {
   flex: 1;
   margin: 0 10px;
   text-align: center;
+  cursor: pointer;
 }
 
 .desplazamientos {
   text-align: center;
   margin: 0 10px;
+  cursor: pointer;
 }
 
 .tienda img,
@@ -38,9 +41,37 @@ button {
   height: 60%;
 }
 
+.cerrarSesion{
+  cursor: pointer;
+}
+
 .tienda h1,
 .app h1,
 .desplazamientos h1 {
-  color: #333;
+  color: var(--colorText);
   margin-bottom: 10px;
 }
+
+#mensajePopup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  background-color: #FF2400;
+  border: 2px solid #FF2400;
+  z-index: 1000;
+  color: white;
+  text-align: center;
+}
+
+#cerrarPopup {
+  margin-top: 10px;
+  background-color: #FF2400;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+

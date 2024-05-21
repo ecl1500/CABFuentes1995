@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 13-05-2024 a las 18:45:09
+-- Tiempo de generación: 21-05-2024 a las 18:16:55
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -90,6 +90,7 @@ INSERT INTO `noticias` (`ID`, `idAutor`, `titular`, `contenido`, `fechaPublicaci
 
 CREATE TABLE `usuarios` (
   `id` int(11) NOT NULL,
+  `email` varchar(255) NOT NULL,
   `pin` int(255) DEFAULT NULL,
   `nombre` varchar(255) NOT NULL,
   `apellidos` varchar(255) NOT NULL,
@@ -101,9 +102,9 @@ CREATE TABLE `usuarios` (
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`id`, `pin`, `nombre`, `apellidos`, `direccion`, `telefono`) VALUES
-(1, 1234, 'Emilio', 'Campo', 'Calle Falsa, 123', '111222333'),
-(2, 5678, 'Alejandro', 'Fuentes', 'Calle Verdadera, 456', '3333444555');
+INSERT INTO `usuarios` (`id`, `email`, `pin`, `nombre`, `apellidos`, `direccion`, `telefono`) VALUES
+(1, 'emilio@campo.es', 1234, 'Emilio', 'Campo', 'Calle Falsa, 123', '111222333'),
+(2, 'ale@fuentes.es', 5678, 'Alejandro', 'Fuentes', 'Calle Verdadera, 456', '3333444555');
 
 --
 -- Índices para tablas volcadas
