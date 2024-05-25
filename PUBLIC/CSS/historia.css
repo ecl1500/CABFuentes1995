@@ -28,11 +28,16 @@ main .text {
 }
 
 .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 45%;
   float: left;
 }
 
 .img img {
   width: 100%;
+  margin-top: 20px;
   height: auto;
 }

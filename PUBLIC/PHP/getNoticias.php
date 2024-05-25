@@ -5,7 +5,7 @@ include 'conexion.php';
 // Consulta SQL para obtener las noticias con sus autores
 $sql = "SELECT n.titular, n.contenido, n.fechaPublicacion, a.nombre, a.apellido
         FROM noticias n
-        INNER JOIN autor a ON n.idAutor = a.idAutor";
+        INNER JOIN autor a ON n.idAutor = a.idAutor LIMIT 6";
 
 $result = $conexion->query($sql);
 

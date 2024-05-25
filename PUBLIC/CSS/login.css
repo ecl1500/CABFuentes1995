@@ -2,7 +2,7 @@
 :root {
   --fondoCuadro: #F2C230;
   --text-color: black;
-  --colorBtn: darkgray;
+  --colorBtn: #195A9A;
   --error-color: red;
 }
 
@@ -52,7 +52,9 @@ input {
   margin-top: 20px;
   font-size: 20px;
   padding: 10px 20px;
-  color: var(--text-color);
+  border: none;
+  color: white;
+  font-weight: 600;
 }
 
 .error-message {

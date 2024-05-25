@@ -1,32 +1,83 @@
-/*INICIO.CSS*/
 :root {
-  --blue-background: #1F67A6;
-  --yellow-header: #F2D129;
-  --colortext: #F2F2F2;
+  --blue-background: #1f67a6;
+  --yellow-header: #f2d129;
+  --colortext: #f2f2f2;
+}
+
+body {
+  background-color: var(--blue-background);
+  color: var(--colortext);
+}
+
+header {
+  background-color: var(--yellow-header);
+}
+
+.nav-link {
+  color: var(--colortext) !important;
+}
+
+.linea {
+  border-top: 3px solid orange;
 }
 
 .banner,
 .banner img {
-  height: 80vh;
-  width: 99vw;
+  width: 100%;
+  height: auto;
 }
 
 .container {
-  width: 100vw;
-  height: 80vh;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
+  justify-content: space-around;
+  height: auto;
+
 }
 
 .enlaces,
 .noticia {
-  margin-top: 10px;
-  height: 100%;
-  width: 45vw;
+  height: auto;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
+}
+
+.row{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 10px;
+  
+}
+
+.noticia,
+.noticia * {
+  background-color: var(--colortext);
+  color: var(--blue-background);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: var(--yellow-header);
+  color: black;
+}
+
+footer a {
+  color: var(--blue-background);
+}
+
+footer a:hover {
+  color: var(--colortext);
+}
+.noticia {
+  padding: 15px;
+}
+
+.noticia h3 {
+  margin-bottom: 10px;
 }
