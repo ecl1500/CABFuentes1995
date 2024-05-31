@@ -33,11 +33,6 @@ document.addEventListener('DOMContentLoaded', function() {
         tienda.addEventListener('click', mostrarMensaje);
     }
 
-    const desplazamientos = document.querySelector('.desplazamientos');
-    if (desplazamientos) {
-        desplazamientos.addEventListener('click', mostrarMensaje);
-    }
-
     // Añadir evento de clic al botón de cerrar
     const cerrarPopup = document.getElementById('cerrarPopup');
     cerrarPopup.addEventListener('click', function() {
