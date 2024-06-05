@@ -60,7 +60,7 @@ $conexion->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="PUBLIC/CSS/general.css">
-    <link rel="stylesheet" type="text/css" href="PUBLIC/CSS/logueado.css">
+    <link rel="stylesheet" type="text/css" href="PUBLIC/CSS/inscripcionDesplazamiento.css">
     <link rel="icon" href="PUBLIC/IMAGES/EscudoCABFuentes95.ico">
     <title>Inscripción Desplazamiento - CAB FUENTES 1995</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
