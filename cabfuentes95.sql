@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 30-05-2024 a las 15:42:34
+-- Tiempo de generación: 05-06-2024 a las 18:27:13
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -125,7 +125,9 @@ CREATE TABLE `personadesplazamientos` (
 INSERT INTO `personadesplazamientos` (`idPersonaDesplazamiento`, `idUsuario`, `idDesplazamiento`, `DNI`) VALUES
 (4, 1, 1, '111111G'),
 (5, 2, 2, '22222D'),
-(6, 1, 3, '33333F');
+(6, 1, 3, '33333F'),
+(8, 1, 1, '47348166K'),
+(9, 1, 2, '47348166K');
 
 -- --------------------------------------------------------
 
@@ -140,16 +142,17 @@ CREATE TABLE `usuarios` (
   `nombre` varchar(255) NOT NULL,
   `apellidos` varchar(255) NOT NULL,
   `direccion` varchar(255) DEFAULT NULL,
-  `telefono` varchar(20) DEFAULT NULL
+  `telefono` varchar(20) DEFAULT NULL,
+  `pin_hash` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`id`, `email`, `pin`, `nombre`, `apellidos`, `direccion`, `telefono`) VALUES
-(1, 'emilio@campo.es', 1234, 'Emilio', 'Campo', 'Calle Falsa, 123', '111222333'),
-(2, 'ale@fuentes.es', 5678, 'Alejandro', 'Fuentes', 'Calle Verdadera, 456', '3333444555');
+INSERT INTO `usuarios` (`id`, `email`, `pin`, `nombre`, `apellidos`, `direccion`, `telefono`, `pin_hash`) VALUES
+(1, 'emilio@campo.es', 1234, 'Emilio', 'Campo', 'Calle Falsa, 123', '111222333', '$2y$10$NxOu1DlmZNNXjhNwqkGQ8.kl5gu.Y7PGrPZ.XzoCSQMU8SNsMvcg.'),
+(2, 'ale@fuentes.es', 5678, 'Alejandro', 'Fuentes', 'Calle Verdadera, 456', '3333444555', '$2y$10$O9c4n9Li2fBiWoCpQGoGduVUno2CwVA9YuGLqZAk47vdckDNcHG2C');
 
 --
 -- Índices para tablas volcadas
@@ -214,7 +217,7 @@ ALTER TABLE `noticias`
 -- AUTO_INCREMENT de la tabla `personadesplazamientos`
 --
 ALTER TABLE `personadesplazamientos`
-  MODIFY `idPersonaDesplazamiento` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `idPersonaDesplazamiento` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`

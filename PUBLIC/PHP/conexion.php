@@ -1,8 +1,8 @@
 <?php
 // Datos de conexión a la base de datos
 $host = "localhost";
-$user = "root"; // Reemplazar con el nombre de usuario de la base de datos
-$password = ""; // Reemplazar con la contraseña de la base de datos
+$user = "root"; 
+$password = "";
 $database = "cabfuentes95";
 
 // Conexión a la base de datos
