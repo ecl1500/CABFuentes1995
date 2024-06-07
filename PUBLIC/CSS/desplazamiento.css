@@ -3,13 +3,25 @@ main {
     padding: 20px;
     background-color: #f9f9f9;
     font-family: Arial, sans-serif;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
+
+header button {
+    background-color: transparent;
+    border: none;
+    font-weight: 700;
+    font-size: 20px;
+  }
 
 main h1 {
     text-align: center;
     color: #333;
     font-size: 2em;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .desplazamientos {
